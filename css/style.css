@@ -74,14 +74,22 @@ address {
 
 /* ШАПКА */
 
-.main-nav{
+.page-header{
 display: flex;
 align-items: center;
 justify-content: space-between;
 border-bottom: 1px solid #ECECEC;
 }
 
-.logo{
+
+/*logo*/
+
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo__link{
 padding-top: 24px;
 padding-bottom: 25px;
 
@@ -92,10 +100,9 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-decoration: none;
-transition: color 250ms var(--cubik-timing);
 }
 
-.logo-color{
+.logo__color{
 color: var(--accent-color);
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -104,23 +111,20 @@ line-height: 1.19;
 text-decoration: none;
 }
 
-.logo:hover,
-.logo:focus{
+.logo__link:hover,
+.logo__link:focus{
 color: var(--accent-color);
 }
 
-.logo-nav{
-display: flex;
-align-items: center;
-}
+/* NAV */
 
-.site-nav{
+.nav{
 display: flex;
+transition: color 250ms var(--cubik-timing);
 margin-left: 93px;
-
 }
 
-.site-nav .link::after{
+.nav__link::after{
 content: '';
 
 position: absolute;
@@ -136,12 +140,11 @@ opacity: 0;
 /*transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;*/
 }
 
-.site-nav .item+ .item{
+.nav__item+ .nav__item{
 margin-left: 50px;
 }
 
-
-.site-nav .link{
+.nav__link{
 display: block;
 padding-top: 32px;
 padding-bottom: 32px;
@@ -155,17 +158,19 @@ position: relative;
 transition: color 250ms var(--cubik-timing);
 }
 
-.link.current::after{
+.current::after{
 opacity: 1;
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus{
-color: var(--accent-color);
-
+.current {
+    color: var(--accent-color);
 }
-.link.current{
-color: var(--accent-color);}
+
+.nav__link:hover,
+.nav__link:focus{
+color: var(--accent-color);
+}
+
+/* Contact */
 
 .auth-nav{
 display: flex;
