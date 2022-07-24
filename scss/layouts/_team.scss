@@ -1,0 +1,74 @@
+.section-team {
+    background: var(--section-bgc-grey)
+}
+
+.team {
+    display: flex;
+}
+
+.card-team {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primery-white-color);
+}
+
+.card-team+.card-team {
+    margin-left: 30px;
+}
+
+.card-team__name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.card-team__title {
+    padding: 30px 0;
+}
+
+.card-team__position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* socials-team */
+
+.socials-team {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.socials-team__link+.socials-team__link {
+    margin-left: 10px;
+}
+
+.socials-team__icon {
+    width: 20px;
+    height: 20px;
+
+}
+
+.socials-team__logo {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background: var(--primery-white-color);
+    border-radius: 50%;
+    background-size: 20px;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    transition: fill 250ms var(--cubik-timing), background 250ms var(--cubik-timing);
+}
+
+.socials-team__logo:hover,
+.socials-team__logo:focus {
+    background: var(--accent-color);
+    fill: var(--primery-white-color);
+}

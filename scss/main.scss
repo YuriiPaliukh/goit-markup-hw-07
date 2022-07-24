@@ -1,0 +1,22 @@
+//  base 
+
+@import './base/modul';
+
+
+// components
+
+@import './components/modul';
+
+
+// layouts
+
+@import './layouts/modul';
+
+
+// utils
+
+@import './utils/modul';
+
+body {
+    color: aquamarine;
+}

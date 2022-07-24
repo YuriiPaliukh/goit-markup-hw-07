@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
     <title>Document</title>
   </head>
 
@@ -456,13 +456,13 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-          <svg class="close-button__icon" aria-hidden="true">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg class="modal__icon" aria-hidden="true">
             <use href="./images/icons.svg.svg#close-black"></use>
           </svg>
         </button>
-        <div class="modal-inner">
-          <h3 class="modal-inner__title">Оставьте свои данные, мы вам перезвоним</h3>
+        <div class="modal__inner">
+          <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>
           <form name="user-data" autocomplete="on" novalidate>
             <div class="form-field">
               <label class="form-field__label">
