@@ -1,10 +1,11 @@
 .section-features {
     padding-bottom: 0px;
+    &__list{
+            display: flex;
+        }
 }
 
-.features {
-    display: flex;
-}
+
 .feature{ 
     &__box {
             display: flex;

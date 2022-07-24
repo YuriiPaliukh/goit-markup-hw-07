@@ -1,13 +1,14 @@
 // utils
 @import './utils/visually-hidden';
+@import './utils/normalize';
+@import './utils/fonts';
 @import './utils/mixins';
 
 // base
-@import './base/base';
+@import './base/common';
 @import './base/reset';
 @import './base/variables';
-@import './base/normalize';
-@import './base/fonts';
+
 
 // components
 @import './components/container';
@@ -15,9 +16,10 @@
 @import './components/header';
 @import './components/button';
 @import './components/footer';
+@import './components/modal';
 
 // layout
-@import './layouts/modal';
+
 @import './layouts/hero';
 @import './layouts/features';
 @import './layouts/product';
